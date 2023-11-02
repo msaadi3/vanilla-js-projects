@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="weather-favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- main -->
+      <div class="main">
+
+        <svg class="weather-spinner" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><style>.spinner_6kVp{transform-origin:center;animation:spinner_irSm .75s infinite linear}@keyframes spinner_irSm{100%{transform:rotate(360deg)}}</style><path d="M10.72,19.9a8,8,0,0,1-6.5-9.79A7.77,7.77,0,0,1,10.4,4.16a8,8,0,0,1,9.49,6.52A1.54,1.54,0,0,0,21.38,12h.13a1.37,1.37,0,0,0,1.38-1.54,11,11,0,1,0-12.7,12.39A1.54,1.54,0,0,0,12,21.34h0A1.47,1.47,0,0,0,10.72,19.9Z" class="spinner_6kVp"/></svg>
+
+        <!-- location  -->
+        <div class="location-container">
+          <i class="fa-solid fa-xl fa-location-dot location-icon"></i>
+          <p class="location-txt"></p>
+        </div>
+
+        <!-- search bar -->
+        <div class="search">
+        <input type="text" placeholder="Search location" class="input" />
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+      </div>
+
+      <!-- day & date -->
+        <p class="day"></p>
+        <p class="date"></p>
+
+        <!-- temp info -->
+        <div class="temp-info">
+          <p class="temp">°C</p>
+          <img class="temp-svg" src="" />
+        </div>
+        <p class="temp-name"></p>
+
+        <!-- weather details -->
+        <div class="weather-details">
+          <div class="humidity">
+          <p class="weather-details-txt">HUMIDITY</p>
+          <p class="humidity-num weather-details-num"></p>
+        </div>
+          <div class="visibility">
+          <p class="weather-details-txt">VISIBILITY</p>
+          <p class="visibility-num weather-details-num"></p>
+        </div>
+          <div class="pressure">
+          <p class="weather-details-txt">PRESSURE</p>
+          <p class="pressure-num weather-details-num"></p>
+        </div>
+          <div class="wind">
+          <p class="weather-details-txt">WIND</p>
+          <p class="wind-num weather-details-num"></p>
+        </div>
+      </div>
+
+      <!-- FORECAST -->
+    <div class="forecast-container">
+      <svg class="forecast-spinner" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><style>.spinner_6kVp{transform-origin:center;animation:spinner_irSm .75s infinite linear}@keyframes spinner_irSm{100%{transform:rotate(360deg)}}</style><path d="M10.72,19.9a8,8,0,0,1-6.5-9.79A7.77,7.77,0,0,1,10.4,4.16a8,8,0,0,1,9.49,6.52A1.54,1.54,0,0,0,21.38,12h.13a1.37,1.37,0,0,0,1.38-1.54,11,11,0,1,0-12.7,12.39A1.54,1.54,0,0,0,12,21.34h0A1.47,1.47,0,0,0,10.72,19.9Z" class="spinner_6kVp"/></svg>
+    </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
+
+
+
+<!-- https://www.figma.com/file/sRWsUuCeldegYUTMwkIlOl/WeatherMe-Website-(Community)?node-id=19%3A98&mode=dev -->
