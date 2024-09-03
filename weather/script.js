@@ -1,4 +1,4 @@
-const API_KEY = import.meta.env.VITE_WEATHER_AP
+const API_KEY = import.meta.env.VITE_WEATHER_API
 
 // Day and Date
 const dateObj = new Date()
